@@ -13,7 +13,7 @@ var Enemy = function() {
 
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
-let allEnemies = [new Enemy(), new Enemy(), new Enemy(), new Enemy()];
+let allEnemies = [new Enemy(), new Enemy(), new Enemy()];
 Enemy.prototype.update = function(dt) {
   this.x = this.x + this.speed * dt;
   if (this.x >= 500) {
